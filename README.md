@@ -8,6 +8,8 @@ Use import AVFoundation to add the AVFoundation framework to the AppDelegate.swi
 In the application(_:didFinishLaunchingWithOptions:) method, retrieve the shared instance of the audio session and set the app’s audio session category to playback and mode to moviePlayback.
 
 // Set Up the Audio Session
+
+
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     let audioSession = AVAudioSession.sharedInstance()
     do {
@@ -18,6 +20,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     }
     return true
 }
+
 
 Set Up and Configure the User Interface
 After configuring your app’s audio session, you need to create the user interface for the player.
